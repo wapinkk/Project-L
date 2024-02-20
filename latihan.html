@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+    <style>
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+
+        .nav-header {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 10px 0px;
+        }
+
+        .nav-header a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="text-align: center;" class="nav-header">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="#">Death Note</a></li>
+            <li class="crumb"><a href="#">Character</a></li>
+            <li class="crumb">L Lawliet</li>
+        </ol>
+    </nav>
+    <main>
+        <figure style="border: 1px solid; max-width: 350px; margin: 0; padding: 5px;">
+            <img src="profile.png" style="max-width: 350px; width: 500px; background-color: #222;">
+            <figcaption style="text-align: center; background-color: #222; color: #fff; margin: 0%;">
+                L Lawliet<sup>&copy;</sup>
+            </figcaption>
+        </figure>
+
+        <details>
+            <summary>Information</summary>
+            <p>
+                L Lawliet, also referred to as Ryūzaki, is the main antagonist of the Death Note franchise. Considered
+                to be
+                <br>
+                the world's greatest detective, he is an enigmatic man who spends the series trying to catch the mass
+                murderer Kira, <br>
+                who is none other than the villainous protagonist <mark>Light Yagami</mark>.
+            </p>
+
+        </details>
+    </main>
+
+
+    <footer style="background-color: #222; color: #fff; max-width: 350px; margin: 0%; padding: 6px;">
+        &copy;2024 Murloc
+    </footer>
+</body>
+
+</html>
